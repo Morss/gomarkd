@@ -50,7 +50,7 @@ func handleIndex(w http.ResponseWriter) {
     posts := listPosts()
 
     err := tmpl.ExecuteTemplate(w, "base", map[string]interface{}{
-        "Title":   "Morss Blog",
+        "Title":   "My Static Site",
         "Posts":   posts,
         "Content": template.HTML("<p>Select a post from the list.</p>"),
     })
