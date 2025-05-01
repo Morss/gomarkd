@@ -1,0 +1,30 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+goblog
+
+# Build / cache
+/vendor/
+/bin/
+/obj/
+/tmp/
+*.log
+
+# Go Modules
+go.sum
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Optional: ignore output or generated static files (if any in the future)
+output/
+

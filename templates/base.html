@@ -1,0 +1,28 @@
+{{ define "base" }}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/">My Blog</a></h1>
+    </header>
+    <div style="display: flex;">
+        <nav style="min-width: 200px; padding-right: 20px;">
+            <ul>
+                {{ range .Posts }}
+                <li><a href="{{ .Path }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+        <main>
+            {{ .Content }}
+        </main>
+    </div>
+</body>
+</html>
+{{ end }}
+

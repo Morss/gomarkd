@@ -1,0 +1,72 @@
+/* Base styles */
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Layout */
+div {
+    display: flex;
+    padding: 1rem;
+}
+
+/* Sidebar */
+nav {
+    min-width: 200px;
+    margin-right: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li {
+    margin-bottom: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007acc;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+/* Headings inside posts */
+main h1, main h2, main h3 {
+    color: #222;
+}
+
+/* Lists */
+main ul {
+    padding-left: 1.2rem;
+}
+
